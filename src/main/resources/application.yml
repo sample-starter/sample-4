@@ -1,5 +1,6 @@
 server:
   port: 8081
+
 management:
   endpoints:
     web:
@@ -27,48 +28,3 @@ management:
       enabled: true
     elasticsearch:
       enabled: false
-springdoc:
-  api-docs:
-    enabled: true
-  swagger-ui:
-    path: /swagger.html
-    enabled: true
-    disable-swagger-default-url: true
-    config:
-      title: Example API
-      version: v1
-spring:
-  kafka:
-    bootstrap-servers: ${BOOTSTRAP_SERVERS}
-    ssl-key-password: ${KAFKA_SSL_PASSWORD}
-    ssl-cert-location: /etc/secrets/kafka_cert.jks
-    enable-ssl: ${KAFKA_ENABLE_SSL}
-    consumer:
-      retries: 3
-      group-id: spring-boot-kafka-consumer-sample
-      enable-auto-commit: false
-      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
-      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
-      topic: sample-topic
-  sql:
-    init:
-      mode: always
-  cloud:
-    azure:
-      cosmos:
-        database: order-ingestion
-  datasource:
-    url: jdbc:mysql://localhost:3306/your_database
-    username: your_username
-    password: your_password
-    driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
-    initialization-mode: always
-  jpa:
-    defer-datasource-initialization: true
-    hibernate:
-      dialect: org.hibernate.dialect.SQLServer2008Dialect
-      ddl-auto: none
-      show-sql: true
-      generate-ddl: false
-      naming:
-        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
