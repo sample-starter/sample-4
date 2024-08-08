@@ -1,4 +1,4 @@
-package org.sample.sql.entities.entities;
+package org.sample.sql.entities;
 
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
