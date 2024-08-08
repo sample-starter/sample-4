@@ -1,4 +1,4 @@
-package org.sample.kafka.service.kafkaproducer.service;
+package org.sample.kafka.service.service;
 
 import org.apache.kafka.clients.producer.ProducerRecord;
 import org.springframework.beans.factory.annotation.Autowired;
