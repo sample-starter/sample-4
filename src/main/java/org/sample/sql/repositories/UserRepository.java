@@ -1,6 +1,6 @@
-package org.sample.sql.repositories.sql.repositories;
+package org.sample.sql.repositories.repositories;
 
-import org.sample.sql.repositories.sql.entities.User;
+import org.sample.sql.repositories.entities.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
