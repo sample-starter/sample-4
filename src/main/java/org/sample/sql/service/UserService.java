@@ -1,7 +1,7 @@
 package org.sample.sql.service;
 
-import org.example.sql.entities.User;
-import org.example.sql.repositories.UserRepository;
+import org.sample.sql.entities.User;
+import org.sample.sql.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
