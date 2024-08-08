@@ -50,3 +50,25 @@ spring:
       key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
       value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
       topic: sample-topic
+  sql:
+    init:
+      mode: always
+  cloud:
+    azure:
+      cosmos:
+        database: order-ingestion
+  datasource:
+    url: jdbc:mysql://localhost:3306/your_database
+    username: your_username
+    password: your_password
+    driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    initialization-mode: always
+  jpa:
+    defer-datasource-initialization: true
+    hibernate:
+      dialect: org.hibernate.dialect.SQLServer2008Dialect
+      ddl-auto: none
+      show-sql: true
+      generate-ddl: false
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
